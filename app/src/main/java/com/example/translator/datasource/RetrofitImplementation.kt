@@ -1,8 +1,8 @@
 package com.example.dictionary.datasource
 
-import com.example.dictionary.model.data.api.BaseInterceptor
 import com.example.dictionary.model.data.DataModel
 import com.example.dictionary.model.data.api.ApiService
+import com.example.translator.model.data.api.BaseInterceptor
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -16,12 +16,11 @@ class RetrofitImplementation : DataSource<List<DataModel>> {
     override suspend fun getData(word: String): List<DataModel> =
         getService(BaseInterceptor.interceptor).searchAsync(word).await()
 
-    private fun getService(interceptor: Interceptor): ApiService =
-        createRetrofit(interceptor).create(
-            ApiService::class.java
-        )
 
-    private fun createRetrofit(interceptor: Interceptor): Retrofit = Retrofit.Builder()
+    private fun getService(interceptor: Interceptor): ApiService =
+        createRetrofit(interceptor).create(ApiService::class.java)
+
+    private fun createRetrofit(interceptor: Interceptor) = Retrofit.Builder()
         .baseUrl(BASE_URL_LOCATIONS)
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(CoroutineCallAdapterFactory())

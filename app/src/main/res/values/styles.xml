@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <resources>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -7,12 +8,14 @@
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
 
     </style>
+
     <style name="BaseTextStyle" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textColor">@color/color_text_main</item>
         <item name="android:textSize">@dimen/text_size_standard</item>
         <item name="android:textStyle">normal</item>
 
     </style>
+
     <style name="HeaderTextStyle" parent="BaseTextStyle">
         <item name="android:textColor">@color/color_text_header</item>
         <item name="android:textSize">@dimen/text_size_standard_header</item>
@@ -38,7 +41,8 @@
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
 
-    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog"><item name="bottomSheetStyle">@style/AppModalStyle</item>
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
 
     </style>
 

@@ -4,8 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/Translator/app/src/main/res/drawable-v24/ic_search.xml" value="0.36944444444444446" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/drawable/ic_history.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/drawable/ic_load_error_vector.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/drawable/ic_no_photo_vector.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/layout/activity_description.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/layout/activity_history.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/layout/activity_history_recyclerview_item.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/User/Translator/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/User/Translator/app/src/main/res/layout/activity_main_recyclerview_item.xml" value="0.2907608695652174" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/layout/loading_layout.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/User/Translator/app/src/main/res/menu/history_menu.xml" value="2.275" />
       </map>
     </option>
   </component>

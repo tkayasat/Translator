@@ -40,9 +40,11 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
 
     // RxJava
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
@@ -64,6 +66,8 @@ dependencies {
     //Kotlin
     implementation 'androidx.core:core-ktx:1.3.0'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.72'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.4'
 
     // Dagger
     implementation 'com.google.dagger:dagger-android:2.35.1'
@@ -71,12 +75,25 @@ dependencies {
 
 
     ///Koin
-    def koin_version= "3.1.2"
+    def koin_version = "3.1.2"
     implementation "io.insert-koin:koin-core:$koin_version"
     implementation "io.insert-koin:koin-android:$koin_version"
     implementation "io.insert-koin:koin-android-compat:$koin_version"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
 
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    //Coil
+    implementation 'io.coil-kt:coil:0.11.0'
+
+    //Room
+    implementation 'androidx.room:room-runtime:2.3.0-alpha01'
+    implementation 'androidx.room:room-ktx:2.3.0-alpha01'
 
 }

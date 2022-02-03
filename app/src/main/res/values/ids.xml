@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="header_history_textview_recycler_item" type="id" />
+</resources>
