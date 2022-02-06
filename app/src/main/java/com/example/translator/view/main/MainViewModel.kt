@@ -3,12 +3,11 @@ package com.example.dictionary.view.main
 import androidx.lifecycle.LiveData
 import com.example.dictionary.model.data.AppState
 import com.example.dictionary.utils.ui.parseOnlineSearchResults
-import com.example.dictionary.view.base.BaseViewModel
+import core.viewmodel.BaseViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class MainViewModel(private val interactor: MainInteractor) : BaseViewModel<AppState>() {
+class MainViewModel(private val interactor: MainInteractor) : core.viewmodel.BaseViewModel<AppState>() {
 
 
     private val liveDataForViewToObserve: LiveData<AppState> = mutableLiveData
